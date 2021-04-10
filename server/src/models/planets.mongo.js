@@ -6,3 +6,6 @@ const planetSchema = new mongoose.Schema({
     required: true,
   }
 });
+
+// Connects planetSchema with the "planets" collection
+module.exports = mongoose.model('Planet', planetSchema);
