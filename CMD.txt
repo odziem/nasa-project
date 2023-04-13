@@ -1,3 +1,4 @@
 git add .github/workflows/node.yml
-git commit -m "Build pipeline workflow"
+git commit -m "Build pipeline workflow2"
+git log
 git push origin master
