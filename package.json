@@ -1,7 +1,7 @@
 {
   "name": "nasa-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "NASA Mission Control Project",
   "main": "index.js",
   "scripts": {
     "install-server": "npm install --prefix server",
