@@ -17,18 +17,18 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "axios": "^1.7.7",
-    "cors": "^2.8.5",
-    "csv-parse": "^5.5.6",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "mongoose": "^8.6.1",
-    "morgan": "^1.10.0",
-    "pm2": "^5.4.2"
+    "axios": "^1.20.0",
+    "cors": "^2.8.6",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "mongoose": "^8.24.4",
+    "morgan": "^1.12.1",
+    "pm2": "^5.4.3"
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "nodemon": "^3.1.4",
-    "supertest": "^7.0.0"
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
   }
 }
