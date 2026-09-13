@@ -1,9 +1,11 @@
+
 {
   "name": "nasa-project",
   "version": "1.0.0",
   "description": "NASA Mission Control Project",
   "main": "index.js",
-  "scripts": {
+  "scripts": {true
+  
     "install-server": "npm install --prefix server",
     "install-client": "npm install --prefix client",
     "install": "npm run install-server && npm run install-client",
@@ -12,9 +14,6 @@
     "watch": "npm run server & npm run client",
     "deploy": "npm run build --prefix client && npm start --prefix server",
     "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
-    "test": "npm test --prefix server && npm test --prefix client"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
-}
+    "test": "npm test --prefix server
+
+
