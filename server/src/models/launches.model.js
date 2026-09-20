@@ -5,30 +5,13 @@ const planets = require('./planets.mongo');
 
 const DEFAULT_FLIGHT_NUMBER = 100;
 
-const SPACEX_API_URL = 'https://api.spacexdata.com/v4/launches/query';
+// The original SpaceX API (api.spacexdata.com) was archived by
+// the owner. This is a hosted snapshot of the same response.
+const SPACEX_API_URL = 'https://odziem.github.io/nasa-project/spacex-launches-query.json';
 
 async function populateLaunches() {
   console.log('Downloading launch data...');
-  const response = await axios.post(SPACEX_API_URL, {
-    query: {},
-    options: {
-      pagination: false,
-      populate: [
-        {
-          path: 'rocket',
-          select: {
-            name: 1
-          }
-        },
-        {
-          path: 'payloads',
-          select: {
-            'customers': 1
-          }
-        }
-      ]
-    }
-  });
+  const response = await axios.get(SPACEX_API_URL);
 
   if (response.status !== 200) {
     console.log('Problem downloading launch data');
