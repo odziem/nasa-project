@@ -1,0 +1,49 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "npm install",
+      "name": "Installing Dependencies"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "install-server": {
+      "name": "install-server",
+      "command": "npm run install-server"
+    },
+    "install-client": {
+      "name": "install-client",
+      "command": "npm run install-client"
+    },
+    "install": {
+      "name": "install",
+      "command": "npm run install"
+    },
+    "server": {
+      "name": "server",
+      "command": "npm run server"
+    },
+    "client": {
+      "name": "client",
+      "command": "npm run client"
+    },
+    "watch": {
+      "name": "watch",
+      "command": "npm run watch"
+    },
+    "deploy": {
+      "name": "deploy",
+      "command": "npm run deploy"
+    },
+    "deploy-cluster": {
+      "name": "deploy-cluster",
+      "command": "npm run deploy-cluster"
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test"
+    }
+  }
+}
